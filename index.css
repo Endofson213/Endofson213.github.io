@@ -43,7 +43,6 @@ header{
     color: #ffffff;
 }
 
-
 .c-item{
 height: 710px;
 }
@@ -82,10 +81,12 @@ filter: brightness(0.3);
 .l-img{
     height: 40%;
     object-fit: scale-down;
-    display: inline-block;
+    display: flex;
+    width: 15%;
 }
-.col1{
-    width: 20%;
+
+.row{
+    margin-left: 374px;
 }
 
 .g-item{
@@ -260,7 +261,6 @@ footer{
     position: relative;
     transform-style: preserve-3d;
 
-
 }
 .single{
     color: white;
@@ -288,4 +288,15 @@ footer{
 }
 p {
     font-family: "Century Gothic";
+}
+.section2,.section1,.section3{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(-100%);
+    transition:all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform:translateX(0);
 }

@@ -1,0 +1,137 @@
+
+html{
+    height: 100%;
+}
+body{
+    font-family: "Lato", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1
+}
+header{
+    text-align: start;
+    background: linear-gradient(180deg,#275C29,#82C183);
+}
+.container{
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.textcontainer{
+    margin-top: 3%;
+    
+}
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+
+.c-item{
+height: 710px;
+}
+.c-img{
+height: 100%;
+object-fit: cover;
+filter: brightness(0.3);
+}
+
+
+.section1, .section2, .section3{
+    width: 100%;
+    min-height: 110vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section2{
+    width: 100%;
+    min-height: 30vh;
+    position: relative;
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: 10;
+
+}
+.section1{
+    min-height: 120vh;
+    background-color: white
+}
+
+.section3{
+    min-height: 40vh;
+    background-color: transparent;
+}
+
+.l-img{
+    height: 40%;
+    object-fit: scale-down;
+    display: inline-block;
+}
+.col1{
+    width: 20%;
+}
+
+.g-item{
+    height: 710px;
+
+    }
+.g-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carouseldivcontainer{
+    padding: 4%;
+    margin-top: -4%;
+    height: fit-content;
+}
+.footercontainer{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+footer{
+    margin:auto;
+
+}
+
+.dp{
+    padding: 2%;
+    position: static;
+    text-align: center;
+    flex-grow: 1;
+    background: #142d66;
+    color: white;
+
+}
+.imagecontainer{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+
+}
