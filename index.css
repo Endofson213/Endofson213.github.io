@@ -1,0 +1,291 @@
+
+html{
+    height: 100%;
+}
+body{
+    font-family: "Century Gothic";
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1
+}
+header{
+    text-align: start;
+    background: linear-gradient(180deg,#275C29,#82C183);
+}
+.container{
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+
+.c-item{
+height: 710px;
+}
+.c-img{
+height: 100%;
+object-fit: cover;
+filter: brightness(0.3);
+}
+
+
+.section1, .section2, .section3{
+    width: 100%;
+    min-height: 110vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section2{
+    width: 100%;
+    min-height: 30vh;
+    position: relative;
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: 10;
+
+}
+.section1{
+    min-height: 120vh;
+    background-color: white
+}
+
+.section3{
+    min-height: 40vh;
+    background-color: transparent;
+}
+
+.l-img{
+    height: 40%;
+    object-fit: scale-down;
+    display: inline-block;
+}
+.col1{
+    width: 20%;
+}
+
+.g-item{
+    height: 710px;
+
+    }
+.g-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carouseldivcontainer{
+    padding: 4%;
+    margin-top: -4%;
+    height: fit-content;
+}
+footer{
+    margin:auto;
+
+}
+
+.imagecontainer{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+
+}
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Century Gothic";
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1;
+    position: relative;
+}
+
+.background {
+    position: relative;
+    background-image: url('Login_BG.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.34);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.container {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.textcontainer {
+    margin-top: 3%;
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.login-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Century Gothic";
+}
+h1{
+    font-family: "Century Gothic";
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.btn-success {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.login-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+footer{
+    margin:auto;
+
+}
+
+.footercontainer{
+    width: 100%;
+    background: #142d66;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    transform-style: preserve-3d;
+}
+
+.imagecontainer{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+
+}
+.single{
+    color: white;
+    margin-left: 16.5%;
+    text-align: center;
+}
+.dp{
+    padding: 2%;
+    position: static;
+    text-align: center;
+    flex-grow: 1;
+    background: #142d66;
+    color: white;
+
+}
+.cont{
+    display: flex;
+}
+.cont p{
+    margin-left: 10px;
+    font-family: "Century Gothic";
+}
+.cont svg{
+    height: 30px;
+}
+p {
+    font-family: "Century Gothic";
+}
