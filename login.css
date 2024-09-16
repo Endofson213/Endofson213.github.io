@@ -1,12 +1,16 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(centurygothic.ttf);
+}
 * {
-    font-family: "Century Gothic", sans-serif;
+    font-family: "CenturyGothic", sans-serif;
 }
 html {
     height: 100%;
 }
 
 body {
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -99,7 +103,7 @@ header {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
 }
 
 .form-group {
@@ -169,7 +173,7 @@ footer{
 }
 .cont p{
     margin-left: 10px;
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
 }
 .cont svg{
     height: 30px;

@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(centurygothic.ttf);
+}
 * {
-    font-family: "Century Gothic", sans-serif;
+    font-family: "CenturyGothic", sans-serif;
 }
 
 html{
@@ -7,7 +11,7 @@ html{
 }
 
 body{
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -59,14 +63,14 @@ filter: brightness(0.3);
 
 .section1, .section2, .section3{
     width: 100%;
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     min-height: 110vh;
     position: relative;
     transform-style: preserve-3d;
 }
 .section2{
     width: 100%;
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     min-height: 30vh;
     position: relative;
     transform-style: preserve-3d;
@@ -135,7 +139,7 @@ html {
 }
 
 body {
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -220,10 +224,10 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
 }
 h1{
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
 }
 
 .form-group {
@@ -294,13 +298,13 @@ footer{
 }
 .cont p{
     margin-left: 10px;
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
 }
 .cont svg{
     height: 30px;
 }
 p {
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
 }
 .section2,.section1,.section3{
     opacity: 0;
