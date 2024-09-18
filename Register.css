@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(centurygothic.ttf);
+}
+* {
+    font-family: "CenturyGothic", sans-serif;
+}
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "CenturyGothic";
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1;
+    position: relative;
+}
+
+.background {
+    position: relative;
+    background-image: url('Login_BG.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.34);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+header {
+    text-align: start;
+    background: linear-gradient(180deg, #275C29, #82C183);
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.textcontainer {
+    margin-top: 3%;
+}
+
+.navbar {
+    padding: 20px 20px;
+    margin-right: 170px; /* Remove right margin */
+    position: absolute; /* Make the navbar stick to the top right */
+    top: 50;
+    right: 0;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.navbar {
+    padding: 20px 20px;
+    margin-right: 170px; /* Remove right margin */
+    position: absolute; /* Make the navbar stick to the top right */
+    top: 50;
+    right: 0;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.navbar-nav {
+    justify-content: flex; /* Align items to the right */
+    width: auto; /* Let the width adjust to content */
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+    white-space: nowrap;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu {
+    min-width: 200px;
+}
+
+.nav-link:hover {
+    color: green;
+    transition: color 0.3s ease;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+.collapse {
+    z-index: 10;
+    position: relative;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.login-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "CenturyGothic";
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.btn-success {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.login-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.imagecontainer{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+
+}
+.dp{
+    padding: 2%;
+    position: static;
+    text-align: center;
+    flex-grow: 1;
+    background: #142d66;
+    color: white;
+
+}
+footer{
+    margin:auto;
+
+}
+.footercontainer{
+    width: 100%;
+    background: linear-gradient(360deg, #275C29, #116d19c0);
+    display: flex;
+    position: relative;
+    z-index: 2;
+    transform-style: preserve-3d;
+  
+}
+.single{
+    margin-left: 16.5%;
+    text-align: center;
+
+    
+}
+.single a{
+    color: #000000;
+    text-decoration: none;
+}
+.single a:hover{
+    color: white;
+    
+}
+.single p{
+    color: #000000;
+
+}
+.cont{
+    display: flex;
+}
+.cont p{
+    margin-left: 10px;
+    color: #000000;
+}
+.cont svg{
+    height: 30px;
+  
+}
