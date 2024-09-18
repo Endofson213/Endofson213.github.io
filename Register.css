@@ -178,6 +178,24 @@ h2 {
     color: #007bff;
     text-decoration: none;
 }
+
+.imagecontainer{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+
+}
+.dp{
+    padding: 2%;
+    position: static;
+    text-align: center;
+    flex-grow: 1;
+    background: #142d66;
+    color: white;
+
+}
 footer{
     margin:auto;
 
@@ -191,26 +209,22 @@ footer{
     transform-style: preserve-3d;
   
 }
-.imagecontainer{
-    width: 100%;
-    min-height: 20vh;
-    position: relative;
-    transform-style: preserve-3d;
-
-
-}
 .single{
-    color: white;
     margin-left: 16.5%;
     text-align: center;
+
+    
 }
-.dp{
-    padding: 2%;
-    position: static;
-    text-align: center;
-    flex-grow: 1;
-    background: #142d66;
+.single a{
+    color: #000000;
+    text-decoration: none;
+}
+.single a:hover{
     color: white;
+    
+}
+.single p{
+    color: #000000;
 
 }
 .cont{
@@ -218,7 +232,9 @@ footer{
 }
 .cont p{
     margin-left: 10px;
+    color: #000000;
 }
 .cont svg{
     height: 30px;
+  
 }

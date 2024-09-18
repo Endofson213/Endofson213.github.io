@@ -251,21 +251,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-
-footer{
-    margin:auto;
-
-}
-.footercontainer{
-    width: 100%;
-    background: linear-gradient(360deg, #275C29, #116d19c0);
-    display: flex;
-    position: relative;
-    z-index: 2;
-    transform-style: preserve-3d;
-  
-}
-
 .imagecontainer{
     width: 100%;
     min-height: 20vh;
@@ -287,14 +272,47 @@ footer{
     color: white;
 
 }
+footer{
+    margin:auto;
+
+}
+.footercontainer{
+    width: 100%;
+    background: linear-gradient(360deg, #275C29, #116d19c0);
+    display: flex;
+    position: relative;
+    z-index: 2;
+    transform-style: preserve-3d;
+  
+}
+.single{
+    margin-left: 16.5%;
+    text-align: center;
+
+    
+}
+.single a{
+    color: #000000;
+    text-decoration: none;
+}
+.single a:hover{
+    color: white;
+    
+}
+.single p{
+    color: #000000;
+
+}
 .cont{
     display: flex;
 }
 .cont p{
     margin-left: 10px;
+    color: #000000;
 }
 .cont svg{
     height: 30px;
+  
 }
 .section2,.section1,.section3,.section4{
     opacity: 0;

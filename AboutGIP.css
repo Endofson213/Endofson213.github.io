@@ -28,7 +28,12 @@ h4 {
     color: white;
     font-family: "CenturyGothic";
 }
+.single{
+    margin-left: 16.5%;
+    text-align: center;
 
+    
+}
 footer{
     margin:auto;
 
@@ -189,7 +194,7 @@ h2 {
 }
 
 .heroim{
-    height: 400px;
+    height: 510px;
     object-fit: cover;
     filter: brightness(0.3);
     overflow: hidden;
