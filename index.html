@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOLE GIP WEBSITE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <!-- Header with Carousel Background -->
+    <header>
+        <div class="position-relative">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img src="c1.jpg" class="d-block w-100 c-img" alt="...">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="c2.jpg" class="d-block w-100 c-img" alt="...">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="c3.jpg" class="d-block w-100 c-img" alt="...">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="c4.jpg" class="d-block w-100 c-img" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Overlay Content: Logo, Navigation, Text -->
+            <div class="position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-between">
+                <div class="header">
+                    <div class="d-flex justify-content-between align-items-center p-3">
+                        
+                        <!-- Logo -->
+                        <img src="Logo.png" alt="DOLE Logo" width="150" class="img-fluid logo">
+                        
+                        <!-- Navigation Bar -->
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mx-2" href="AboutGIP.html">About GIP</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                User Manual
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item"
+                                                        href="https://drive.google.com/file/d/18B77oCpC5Hz092WRtYaT2kbcN6YiShdh/view">GIP
+                                                        Applicant</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="https://drive.google.com/file/d/1ZsZwgUP23EvQ7s2-KRcJDluAFIIOR_33/view">Partner
+                                                        Agency</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mx-2" href="Login.html">Login/Register</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Main Text and Button in Carousel -->
+                <div class="d-flex flex-column justify-content-center align-items-start h-100 main-text">
+                    <div class="text-light">
+                        <h1 class="fw-bold display-5">Launch Your Career, Build Your Skills, Come Join Us!</h1>
+                        <a href="Login.html">
+                            <button type="button" class="btn btn-outline-success register-btn">Register Now</button>
+                        </a>
+                    </div>
+
+                    <!-- Placeholder Image on the Right -->
+                    <div class="placeholder-image position-absolute end-0 top-50 translate-middle-y me-5">
+                        <img src="c4.jpg" class="img-fluid" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--ABOUT GIP SECTION CODE-->  
+    <h1 class="text-center mt-5">ABOUT GIP</h1>
+    <div class="text-center">
+    <img src="underline.png" alt="underline" class="underline-img">
+
+    </div>
+      <p class="text-center mt-5 mx-5 justify-content-center">Government Internship Program or GIP is a component of KABATAAN 2000 under Executive Order (EO) no. 139 s. 1993, and DOLE Administrative Order No. 260-15, which aims to provide opportunities and engage young workers to serve general public in government agencies/entities projects and programs at the national and local level. The Objectives of the program are: To provide young workers, particularly the poor/indigent and young workers, opportunity to demonstrate their talents and skills in the field of public service with the ultimate objective of attracting the best and the brightest who want to pursue a career in government service, particularly in the fields and disciplines related to labor and employment, and To fast track the implementation and monitoring of DOLE programs and projects related to employment facilitation and social protection, all of which directly contributes to the goal of inclusive growth through massive employment generation and substantial poverty reduction.</p>
+      <div class="text-center">
+          <a href="AboutGIP.html"><button  type="button" class="btn btn-outline-dark " >Read More</button></a>
+        </div>
+  </div>
+
+<!--PARTNER AGENCIES SECTION CODE-->  
+  <div class="section2">
+    <div class="partneragenciescontainer py-3">
+        <h1 class="text-center mt-5">PARTNER AGENCIES</h1>
+        <p class="text-center top-0">(some of our partner agencies)</p>
+        <div class="text-center">
+            <img src="underline.png" alt="underline" class="underline-img">
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center text-center" style="height: 30vh">
+                <div class="col-sm-2">
+                    <img class="l-img" src="balioklogo.jpg" alt="Baliok logo">
+                </div>
+                <div class="col-sm-2">
+                    <img class="l-img" src="csclogo.png" alt="CSC logo">
+                </div>
+                <div class="col-sm-2">
+                    <img class="l-img" src="dalogo.png" alt="DA logo">
+                </div>
+                <div class="col-sm-2">
+                    <img class="l-img" src="nlrc.png" alt="NLRC logo">
+                </div>
+                <div class="col-sm-2">
+                    <img class="l-img" src="pesologo.png" alt="PESO logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--GIP NUMBERS CODE-->
+<div class="section3">
+    <br>
+    <br>
+    <div class="gipnumcont mt-5">
+      <div class="text-center">
+        <h1>GIP BY THE NUMBERS</h1>
+        <img src="underline.png" alt="underline" class="underline-img">
+      </div>
+      <br>
+      <br>
+      <div class="block1">
+        <h1 style="font-size: 1vw;">Total number of approved GIP</h1>
+        <h1 style="font-size: 10vw;" id="approvedGIP" class="odometer">00</h1>
+      </div>
+      <div class="block2">
+        <h1 style="font-size: 1vw;">Total number of Partner Agency</h1>
+        <h1 style="font-size: 10vw;" id="partnerAgencies" class="odometer">00</h1>
+      </div>
+      <div class="block2">   
+        <h1 style="font-size: 1vw;">Total number of Absorbed GIP</h1>
+        <h1 style="font-size: 10vw;" id="absorbedGIP" class="odometer">00</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <!--GALLERY SECTION CODE-->
+  <div class="section4 w-100" style="background-color: transparent;">
+    <h1 class="text-center mt-5">GALLERY</h1>
+    <div class="text-center mb-5">
+      <img src="underline.png" alt="underline" class="underline-img">
+      </div>
+    
+    <div class="carouseldivcontainer">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active g-item">
+            <img src="gallery1.JPG" class="d-block w-100 g-img" alt="...">
+          </div>
+          <div class="carousel-item g-item">
+            <img src="gallery2.JPG" class="d-block w-100 g-img" alt="...">
+          </div>
+          <div class="carousel-item g-item">
+            <img src="gallery3.JPG" class="d-block w-100 g-img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section CODE -->
+<footer>
+    <div class="footercontainer">
+        <div class="single mt-4">
+            <p>Contact Us:</p>
+            <div class="cont">
+                <svg width="30" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.0915 19.9262C37.0915 28.857 29.5429 36.097 20.2313 36.097M37.0915 19.9262C37.0915 10.9953 29.5429 3.75537 20.2313 3.75537M37.0915 19.9262H3.37109M20.2313 36.097C10.9197 36.097 3.37109 28.857 3.37109 19.9262M20.2313 36.097C24.4485 31.6688 26.8451 25.9222 26.9754 19.9262C26.8451 13.9301 24.4485 8.1835 20.2313 3.75537M20.2313 36.097C16.0141 31.6688 13.6175 25.9222 13.4872 19.9262C13.6175 13.9301 16.0141 8.1835 20.2313 3.75537M3.37109 19.9262C3.37109 10.9953 10.9197 3.75537 20.2313 3.75537" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>ro11.dole.gov.ph</p>
+            </div>
+            <div class="cont">
+                <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.67946 18.8521C2.89856 18.8521 2.22416 18.6267 1.65623 18.1758C1.11197 17.7054 0.839844 17.1468 0.839844 16.5V2.38727C0.839844 1.74044 1.11197 1.19161 1.65623 0.74079C2.22416 0.270367 2.89856 0.0351562 3.67946 0.0351562H26.3964C27.1773 0.0351562 27.8398 0.270367 28.3841 0.74079C28.952 1.19161 29.236 1.74044 29.236 2.38727V16.5C29.236 17.1468 28.952 17.7054 28.3841 18.1758C27.8398 18.6267 27.1773 18.8521 26.3964 18.8521H3.67946ZM15.0379 10.6197L26.3964 4.73939V2.38727L15.0379 8.26756L3.67946 2.38727V4.73939L15.0379 10.6197Z" fill="black"/>
+                </svg>
+                <p>ro11@dole.gov.ph</p>
+            </div>
+            <div class="cont">
+                <svg width="30" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_99_495)">
+                    <path d="M31.167 19.5918V22.9668C31.1686 23.2801 31.0878 23.5902 30.9297 23.8773C30.7717 24.1643 30.5399 24.422 30.2491 24.6338C29.9584 24.8457 29.6152 25.0069 29.2414 25.1073C28.8677 25.2077 28.4716 25.245 28.0787 25.2168C23.7194 24.8406 19.5319 23.6577 15.8529 21.763C12.4299 20.0357 9.52791 17.7312 7.35285 15.013C4.95866 12.0781 3.4687 8.73662 3.00369 5.25925C2.96828 4.94815 3.01484 4.63461 3.1404 4.33858C3.26595 4.04255 3.46774 3.77053 3.73294 3.53982C3.99813 3.30912 4.32091 3.1248 4.68072 2.99859C5.04054 2.87238 5.4295 2.80704 5.82285 2.80675H10.0729C10.7604 2.80138 11.4269 2.99471 11.9482 3.35072C12.4695 3.70673 12.81 4.20113 12.9062 4.74175C13.0856 5.82182 13.4182 6.88232 13.8979 7.903C14.0885 8.30566 14.1297 8.74328 14.0167 9.16399C13.9037 9.5847 13.6412 9.97087 13.2604 10.2767L11.4612 11.7055C13.4779 14.522 16.4145 16.854 19.9612 18.4555L21.7604 17.0268C22.1455 16.7243 22.6318 16.5158 23.1616 16.4261C23.6914 16.3364 24.2425 16.3691 24.7495 16.5205C26.0348 16.9014 27.3703 17.1655 28.7304 17.308C29.4185 17.3851 30.047 17.6604 30.4963 18.0814C30.9455 18.5025 31.1843 19.04 31.167 19.5918Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> 
+                    </g>
+                </svg>
+                <p>(082) 227-4289 / (082) 225-3764</p>
+            </div>
+        </div>
+        <div class="single mt-5">
+            <p>© 2024 <a href="https://ro11.dole.gov.ph/">DOLE XI</a></p>
+        </div>
+        <div class="single mt-5">
+            <p><a href="https://ro11.dole.gov.ph/privacy-notice-2/">Privacy Notice</a> | <a href="https://ro11.dole.gov.ph/organizational-profile/">About GIP</a></p>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
