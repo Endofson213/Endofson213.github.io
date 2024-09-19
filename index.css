@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(centurygothic.ttf);
+}
+* {
+    box-sizing: border-box;
+    font-family: "CenturyGothic";
+    padding: 0;
+    margin: 0;
+}
+#navbar-title {
+    margin-top: 0;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    font-size: 1.70rem;
+    color: #ffffff;
+    opacity: 0;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    height: 17.5vh;
+    transition: background-color 0.6s ease, box-shadow 0.3s ease;
+    padding-right: 20vh; 
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#navbar.scrolled {
+    background: linear-gradient(180deg, #275C29, #82C183);
+    transition: background-color 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+#navbar.scrolled::before {
+    opacity: 1;
+}
+
+#navbar-logo {
+    transition: transform 0.3s ease;
+    margin-left: 15vh;
+}
+
+#navbar.scrolled #navbar-logo {
+    transform: scale(0.8);
+    margin-left: -7px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #82C183;
+    text-decoration: none;
+}
+#ABOUTGIPSEC {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+#LoginRegBTN {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#LoginRegBTN:hover {
+    background-color: #6FAB69;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "CenturyGothic";
+    margin: 0;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+}
+
+.hero-overlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10%;
+    text-align: left;
+}
+
+.hero-text {
+    max-width: 75%;
+    color: white;
+}
+
+.hero-image {
+    max-width: 35%;
+    text-align: right;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text, .hero-image {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+.carouseldivcontainer {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    object-fit: cover;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    
+    object-fit: cover;
+}
+.gipsec {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.gipsec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(_MG_9979.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px) brightness(0.3);
+    z-index: -100;
+}
+.gipsec h1 {
+    color: white;
+}
+.register-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #6FAB69;
+    transform: scale(1.05);
+}
+
+.c-item {
+    height: 100vh;
+}
+
+.c-img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.partner-agency img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.partner-carousel img {
+    transition: transform 0.3s ease;
+}
+
+.partner-carousel img:nth-child(1):hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.partner-carousel img:nth-child(2):hover {
+    transform: scale(1.15) translateY(-10px);
+}
+
+.partner-carousel img:nth-child(3):hover {
+    transform: scale(1.2) skew(10deg);
+}
+
+.partner-carousel img:nth-child(4):hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.partner-carousel img:nth-child(5):hover {
+    transform: scale(1.15) translateY(10px);
+}
+
+footer {
+    margin-top: 20px;
+    background: linear-gradient(360deg, #365036, #82C183);
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#left, #center, #right {
+    flex: 1;
+    text-align: center;
+}
+
+#left p, #center p, #right p {
+    margin: 5px 0;
+}
+
+#left img {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.animate {
+    opacity: 1;
+    animation-name: slide-in;
+}
+
+@media (max-width: 992px) {
+    .hero-image img {
+        max-width: 60%;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image img {
+        max-width: 90%;
+        border-radius: 25px;
+    }
+
+    .navbar {
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #left, #center, #right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+}
