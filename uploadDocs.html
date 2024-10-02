@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Documents</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="module" defer src="uploadDocs.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<!--Header SECTION CODE-->  
+<header>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="Logo.png" width="150" class="img-fluid">
+                <span id="navbar-title" class="ms-2">GOVERNMENT INTERNSHIP PROGRAM</span>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="AboutGIP.html">About GIP</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mx-2" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    User Manual
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/18B77oCpC5Hz092WRtYaT2kbcN6YiShdh/view">GIP Applicant</a></li>
+                                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1ZsZwgUP23EvQ7s2-KRcJDluAFIIOR_33/view">Partner Agency</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="login.html">Login/Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Background and Form -->
+<div class="background">
+    <div class="overlay"></div>
+    <div class="content">
+        <section class="login-section">
+            <div class="upload-container d-flex justify-content-center">
+                <!-- White box background -->
+                <div class="bg-white p-4 shadow rounded" style="width: 100%; max-width: 500px;">
+                    <h2 class="text-center">Upload Required Documents</h2>
+                    
+                    <!-- Top Notice -->
+                    <div class="alert alert-info text-center" role="alert">
+                        Only PDF, JPG, and PNG files are allowed. Please ensure your documents are in the correct format.
+                    </div>
+
+                    <form id="uploadForm">
+                        <!-- Birth Certificate Upload -->
+                        <div class="form-group mb-3">
+                            <label for="birthCertificate">Birth Certificate</label>
+                            <input type="file" class="form-control" id="birthCertificate" accept=".pdf,.jpg,.jpeg,.png" required>
+                        </div>
+                        
+                        <!-- Valid ID Upload -->
+                        <div class="form-group mb-3">
+                            <label for="validID">Valid ID</label>
+                            <input type="file" class="form-control" id="validID" accept=".pdf,.jpg,.jpeg,.png" required>
+                        </div>
+                        
+                        <!-- Transcript of Records Upload -->
+                        <div class="form-group mb-3">
+                            <label for="tor">Transcript of Records (TOR)</label>
+                            <input type="file" class="form-control" id="tor" accept=".pdf,.jpg,.jpeg,.png" required>
+                        </div>
+
+                    <!-- Bottom Notice -->
+                    <div class="alert alert-warning text-center mt-3" role="alert">
+                        Note: Your documents will be validated by authorized DOLE personnel. Only valid documents will be processed.
+                    </div>
+                     <!-- Submit Button -->
+                     <button type="submit" class="btn btn-success w-100">Upload Documents</button>
+                    </form>
+                    <div id="loadingMessage" style="display: none;">
+                        <p>Uploading your documents, please wait...</p>
+                    </div>
+
+                    <div class="upload-links text-center mt-3">
+                        <button id="backToProfile" class="btn btn-secondary">Back to Profile</button>
+                    </div>
+                </div>
+                <!-- End of White box background -->
+            </div>
+        </section>
+    </div>
+</div>
+<!-- Footer Section -->
+<footer>
+    <div class="footercontainer">
+        <div class="single mt-4">
+            <p>Contact Us:</p>
+            <div class="cont">
+                <svg width="30" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.0915 19.9262C37.0915 28.857 29.5429 36.097 20.2313 36.097M37.0915 19.9262C37.0915 10.9953 29.5429 3.75537 20.2313 3.75537M37.0915 19.9262H3.37109M20.2313 36.097C10.9197 36.097 3.37109 28.857 3.37109 19.9262M20.2313 36.097C24.4485 31.6688 26.8451 25.9222 26.9754 19.9262C26.8451 13.9301 24.4485 8.1835 20.2313 3.75537M20.2313 36.097C16.0141 31.6688 13.6175 25.9222 13.4872 19.9262C13.6175 13.9301 16.0141 8.1835 20.2313 3.75537M3.37109 19.9262C3.37109 10.9953 10.9197 3.75537 20.2313 3.75537" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>ro11.dole.gov.ph</p>
+            </div>
+            <div class="cont">
+                <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.67946 18.8521C2.89856 18.8521 2.22416 18.6267 1.65623 18.1758C1.11197 17.7054 0.839844 17.1468 0.839844 16.5V2.38727C0.839844 1.74044 1.11197 1.19161 1.65623 0.74079C2.22416 0.270367 2.89856 0.0351562 3.67946 0.0351562H26.3964C27.1773 0.0351562 27.8398 0.270367 28.3841 0.74079C28.952 1.19161 29.236 1.74044 29.236 2.38727V16.5C29.236 17.1468 28.952 17.7054 28.3841 18.1758C27.8398 18.6267 27.1773 18.8521 26.3964 18.8521H3.67946ZM15.0379 10.6197L26.3964 4.73939V2.38727L15.0379 8.26756L3.67946 2.38727V4.73939L15.0379 10.6197Z" fill="white"/>
+                </svg>
+                <p>ro11@dole.gov.ph</p>
+            </div>
+            <div class="cont">
+                <svg width="30" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_99_495)">
+                    <path d="M31.167 19.5918V22.9668C31.1686 23.2801 31.0878 23.5902 30.9297 23.8773C30.7717 24.1643 30.5399 24.422 30.2491 24.6338C29.9584 24.8457 29.6152 25.0069 29.2414 25.1073C28.8677 25.2077 28.4716 25.245 28.0787 25.2168C23.7194 24.8406 19.5319 23.6577 15.8529 21.763C12.4299 20.0357 9.52791 17.7312 7.35285 15.013C4.95866 12.0781 3.4687 8.73662 3.00369 5.25925C2.96828 4.94815 3.01484 4.63461 3.1404 4.33858C3.26595 4.04255 3.46774 3.77053 3.73294 3.53982C3.99813 3.30912 4.32091 3.1248 4.68072 2.99859C5.04054 2.87238 5.4295 2.80704 5.82285 2.80675H10.0729C10.7604 2.80138 11.4269 2.99471 11.9482 3.35072C12.4695 3.70673 12.81 4.20113 12.9062 4.74175C13.0856 5.82182 13.4182 6.88232 13.8979 7.903C14.0885 8.30566 14.1297 8.74328 14.0167 9.16399C13.9037 9.5847 13.6412 9.97087 13.2604 10.2767L11.4612 11.7055C13.4779 14.522 16.4145 16.854 19.9612 18.4555L21.7604 17.0268C22.1455 16.7243 22.6318 16.5158 23.1616 16.4261C23.6914 16.3364 24.2425 16.3691 24.7495 16.5205C26.0348 16.9014 27.3703 17.1655 28.7304 17.308C29.4185 17.3851 30.047 17.6604 30.4963 18.0814C30.9455 18.5025 31.1843 19.04 31.167 19.5918Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> 
+                    </g>
+                </svg>
+                <p>(082) 227-4289 / (082) 225-3764</p>
+            </div>
+        </div>
+        <div class="single mt-5">
+            <p>© 2024 <a href="https://ro11.dole.gov.ph/">DOLE XI</a></p>
+        </div>
+        <div class="single mt-5">
+            <p><a href="https://ro11.dole.gov.ph/privacy-notice-2/">Privacy Notice</a> | <a href="https://ro11.dole.gov.ph/organizational-profile/">About Us</a></p>
+        </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
+    import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
+    import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyB16sNysLRzhQjww9it86rXEXpTKjiXuHE",
+        authDomain: "authentication-3f79b.firebaseapp.com",
+        projectId: "authentication-3f79b",
+        storageBucket: "authentication-3f79b.appspot.com",
+        messagingSenderId: "1017764485191",
+        appId: "1:1017764485191:web:9e7bce8654b02313bcb962"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const storage = getStorage(app);
+    const db = getFirestore(app);
+
+    // Monitor auth state and ensure user is logged in
+    onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // Modify Navbar: Show only User Manual and Logout buttons
+        const loginNavItem = document.querySelector('.nav-link[href="login.html"]');
+        if (loginNavItem) {
+            loginNavItem.textContent = "Logout";
+            loginNavItem.setAttribute('href', '#');
+            loginNavItem.id = 'logoutBtn';
+
+            // Add event listener for logout
+            loginNavItem.addEventListener('click', () => {
+                signOut(auth).then(() => {
+                    window.location.href = 'index.html';
+                }).catch((error) => {
+                    console.error("Logout error:", error);
+                });
+            });
+        }
+
+        // Remove all other nav items except "User Manual" and "Logout"
+        const navbarItems = document.querySelectorAll('.navbar-nav .nav-item');
+        navbarItems.forEach(item => {
+            const linkText = item.querySelector('.nav-link')?.textContent?.trim();
+
+            if (linkText !== "User Manual" && linkText !== "Logout") {
+                item.remove(); // Remove the nav item
+            }
+        });
+
+        // Handle form submission
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Get the files from the input fields
+            const birthCertificateFile = document.getElementById('birthCertificate').files[0];
+            const validIDFile = document.getElementById('validID').files[0];
+            const torFile = document.getElementById('tor').files[0];
+
+            // Validate file types
+            if (!validateFileType(birthCertificateFile) || 
+                !validateFileType(validIDFile) || 
+                !validateFileType(torFile)) {
+                alert('Please upload valid files (JPG, PNG, or PDF).');
+                return;
+            }
+
+            if (!birthCertificateFile || !validIDFile || !torFile) {
+                alert('Please upload all required documents.');
+                return;
+            }
+
+            try {
+                // Show loading message
+                const loadingMessage = document.getElementById('loadingMessage');
+                loadingMessage.style.display = 'block';
+
+                // Upload the files to Firebase Storage and get their download URLs
+                const birthCertificateUrl = await uploadFile(user.uid, 'documents/birthCertificate', birthCertificateFile);
+                const validIDUrl = await uploadFile(user.uid, 'documents/validID', validIDFile);
+                const torUrl = await uploadFile(user.uid, 'documents/tor', torFile);
+
+                // Save the file URLs to Firestore under the current user's document
+                await setDoc(doc(db, "users", user.uid), {
+                    birthCertificate: birthCertificateUrl,
+                    validID: validIDUrl,
+                    tor: torUrl
+                }, { merge: true });
+
+                alert('Documents uploaded successfully!');
+                window.location.href = 'loggedIn.html';  // Redirect after successful upload
+            } catch (error) {
+                console.error('Error uploading files:', error);
+                alert('Failed to upload documents. Please try again.');
+            } finally {
+                // Hide loading message
+                loadingMessage.style.display = 'none';
+            }
+        });
+
+        // Back to Profile Button
+        document.getElementById('backToProfile').addEventListener('click', () => {
+            window.location.href = 'loggedIn.html';
+        });
+
+    } else {
+        // If no user is signed in, redirect to the login page
+        window.location.href = 'login.html';
+    }
+});
+    // Function to validate file type
+    function validateFileType(file) {
+        const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.pdf)$/i;
+        return file && allowedExtensions.exec(file.name);
+    }
+
+    // Function to upload a file to Firebase Storage and return the download URL
+    async function uploadFile(userId, docType, file) {
+        const storageRef = ref(storage, `${userId}/${docType}/${file.name}`);
+        const uploadTask = uploadBytesResumable(storageRef, file);
+
+        return new Promise((resolve, reject) => {
+            uploadTask.on('state_changed',
+                null,
+                (error) => {
+                    console.error('Upload error:', error);
+                    reject(error);
+                },
+                async () => {
+                    const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
+                    resolve(downloadUrl);
+                }
+            );
+        });
+    }
+</script>
+
+</body>
+</html>
